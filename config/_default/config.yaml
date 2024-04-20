@@ -1,0 +1,61 @@
+baseURL: '/'
+title: "The Procedural Blog"
+
+author:
+  name: "Various Authors"
+  headline: "A collection of awesome individuals that love procedural generation."
+
+languageCode: en-us
+DefaultContentLanguage: en
+
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: true
+canonifyURLs: false
+
+paginate: 9
+
+enableInlineShortcodes: true
+
+theme: "github.com/nunocoracao/blowfish/v2"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+privacy:
+  disqus:
+    disable: false
+  googleAnalytics:
+    anonymizeIP: true
+    disable: false
+    respectDoNotTrack: false
+    useSessionStorage: false
+  instagram:
+    disable: false
+    simple: false
+  twitter:
+    disable: false
+    enableDNT: false
+    simple: false
+  vimeo:
+    disable: false
+    enableDNT: false
+    simple: false
+  youtube:
+    disable: false
+    privacyEnhanced: true
+
+server:
+  headers:
+    - for: /**
+      values:
+        Referrer-Policy: strict-origin-when-cross-origin
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.111.3"
+  imports:
+    - path: github.com/nunocoracao/blowfish/v2

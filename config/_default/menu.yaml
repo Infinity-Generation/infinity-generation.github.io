@@ -1,0 +1,28 @@
+main:
+  - name: Blog
+    url: /posts/
+    weight: 10
+  - name: About
+    url: /about/
+    weight: 20
+  - name: Contact
+    url: /contact/
+    weight: 30
+  - name: GitHub
+    pre: github
+    url: https://github.com/Infinity-Generation/infinity-generation.github.io
+    weight: 40
+footer:
+  - name: Blog
+    url: /posts/
+    weight: 10
+  - name: About
+    url: /about/
+    weight: 20
+  - name: Contact
+    url: /contact/
+    weight: 30
+  - name: GitHub
+    pre: github
+    url: https://github.com/Infinity-Generation/infinity-generation.github.io
+    weight: 40
