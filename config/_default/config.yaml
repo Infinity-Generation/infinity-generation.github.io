@@ -1,11 +1,6 @@
 baseURL: '/'
-title: "The Procedural Blog"
 
-author:
-  name: "Various Authors"
-  headline: "A collection of awesome individuals that love procedural generation."
-
-languageCode: en-us
+languageCode: en
 DefaultContentLanguage: en
 
 enableEmoji: true
@@ -13,16 +8,31 @@ enableGitInfo: true
 enableRobotsTXT: true
 canonifyURLs: false
 
-paginate: 9
+paginate: 10
+
+summaryLength: 1
 
 enableInlineShortcodes: true
 
 theme: "github.com/nunocoracao/blowfish/v2"
 
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+
+sitemap:
+  changefreq: "always"
+  filename: "sitemap.xml"
+  priority: 0.5
+
 markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    noClasses: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
 
 privacy:
   disqus:
