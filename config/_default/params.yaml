@@ -1,4 +1,5 @@
 colorScheme: "blowfish"
+copyright: "© { year } The Procedural Blog"
 enableSearch: true
 enableCodeCopy: true
 highlightCurrentMenuArea: true
