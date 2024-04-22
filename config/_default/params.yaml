@@ -9,12 +9,27 @@ header:
 homepage:
   layout: "profile"
   showRecent: true
+  showRecentItems: 20
   showMoreLink: true
   cardView: true
 article:
   showZenMode: true
   showAuthors: true
+  showBreadcrumbs: true
+  showPagination: true
+  invertPagination: true
+  showWordCount: false
 list:
   showSummary: true
   showCards: true
-  cardView: true
+  cardView: false
+  showTableOfContents: true
+taxonomy:
+  showTermCount: true
+  showHero: true
+  heroStyle: "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs: false
+  showViews: true
+  showLikes: true
+  showTableOfContents: true
+  cardView: false
