@@ -13,8 +13,10 @@ homepage:
   showRecentItems: 20
   showMoreLink: true
   cardView: true
+footer:
+  showScrollToTop: true
 article:
-  showZenMode: true
+  showZenMode: false
   showAuthors: true
   showBreadcrumbs: true
   showPagination: true
