@@ -11,7 +11,6 @@ series: ["The Procedural Series"]
 series_order: 1
 draft: true
 weight: 10
-featuredImage: ""
 ---
 In this series, we explore everything about procedural generation. We’ll explore the basics, advanced, and state-of-the-art techniques, and discover how procedural generation is currently used in both content creation, and runtime interactive content.
 
@@ -21,11 +20,20 @@ Procedural generation (pc-gen or proc-gen for short) is the science, art, and te
 
 Procedural generation typically relies on deterministic [psuedorandom number generation](https://en.wikipedia.org/wiki/Pseudorandom_number_generator) (PRNG) to create reliable number sequences that can be used by downstream components to produce the exact same data for a given input. This ensures that if the user wants to generate the exact same data, all they need to do is use the exact same inputs. The trick is that the algorithms used in proc-gen tend to have high entropy, or "variability to the input", in their results; enabling a single number to drastically change the resulting output.
 
+### Where is it used
+
+{{< gallery >}}
+  <img src="gallery/dwarf-fortress.webp" class="grid-w33" />
+  <img src="gallery/minecraft.png" class="grid-w33" />
+  <img src="gallery/no-mans-skys.webp" class="grid-w33" />
+{{< /gallery >}}
+<figcaption>From left to right: The map of Dwarf Fortress. A meadow biome in Minecraft. Gameplay of No Man's Sky. Images from various sources.</figcaption>
+
 Procedural generation's most public claim to fame mostly comes from the video games industry, where games like [Dwarf Fortress](https://www.bay12games.com/dwarves/), [Minecraft](https://www.minecraft.net/en-us) or [No Man's Sky](https://www.nomanssky.com/) have heavily relied on the art to produce the entire visible and interactible world for the player to explore.
 
 However, procedural generation plays important roles in everyday life that typically goes unnotice by most individuals and sometimes even the implementors of the proc-gen systems themselves!
 
-Some less-known, but still widely used use-cases are:
+A list of less-known, but still widely used use-cases:
 
 - **[Weather Forecasting](https://en.wikipedia.org/wiki/Weather_forecasting)**: Numerical weather prediction models like the Global Forecast System (GFS) developed by the National Centers for Environmental Prediction (NCEP) and the European Centre for Medium-Range Weather Forecasts (ECMWF) Integrated Forecast System (IFS) use procedural generation techniques to simulate atmospheric conditions and forecast weather.
 - **[Computer-Aided Design (CAD)](https://en.wikipedia.org/wiki/Computer-aided_design)**: Popular CAD software like Autodesk AutoCAD, SolidWorks, and CATIA heavily utilize procedural modeling techniques for creating and modifying 3D models.[^2]
