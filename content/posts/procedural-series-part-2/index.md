@@ -1,6 +1,6 @@
 ---
-title: "Humble Beginnings"
-date: 2024-04-21T17:46:42-07:00
+title: "Enter the Infinite World of Procedural Generation"
+date: 2024-04-21T17:51:53-07:00
 description: "In this series, we explore everything about procedural generation."
 authors: ["nolankramer"]
 tags:
@@ -10,6 +10,6 @@ categories:
 series: ["The Procedural Series"]
 series_order: 2
 draft: true
-weight: 20
+weight: 30
 featuredImage: ""
 ---
