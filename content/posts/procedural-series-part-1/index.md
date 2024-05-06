@@ -23,11 +23,13 @@ Procedural generation typically relies on deterministic [psuedorandom number gen
 ### Where is it used
 
 {{< gallery >}}
-  <img src="gallery/dwarf-fortress.webp" class="grid-w33" />
-  <img src="gallery/minecraft.png" class="grid-w33" />
+  <img src="gallery/Worldgen_small_steam.png" class="grid-w33" />
+  <img src="gallery/Overworld.webp" class="grid-w33" />
   <img src="gallery/no-mans-skys.webp" class="grid-w33" />
+  <figcaption class="grid-w33">Image 3: Gameplay of No Man's Sky. From <a href="https://assetsio.gnwcdn.com/no-mans-skys-free-next-generation-update-brings-impactful-graphical-upgrade-to-pc-ps5-and-xbox-series-x-s-1603833281557.jpg?width=1920&height=1920&fit=bounds&quality=80&format=jpg&auto=webp">Eurogamer</a>.</figcaption>
+  <figcaption class="grid-w33">Image 1: The small map of Dwarf Fortress. From <a href="https://dwarffortresswiki.org/index.php/File:Worldgen_small_steam.png">Dwarf Fortress Wiki</a>.</figcaption>
+  <figcaption class="grid-w33">Image 2: A forest biome in Minecraft. From <a href="https://minecraft.fandom.com/wiki/File:Overworld.jpg">Minecraft Wiki</a>.</figcaption>
 {{< /gallery >}}
-<figcaption>From left to right: The map of Dwarf Fortress. A meadow biome in Minecraft. Gameplay of No Man's Sky. Images from various sources.</figcaption>
 
 Procedural generation's most public claim to fame mostly comes from the video games industry, where games like [Dwarf Fortress](https://www.bay12games.com/dwarves/), [Minecraft](https://www.minecraft.net/en-us) or [No Man's Sky](https://www.nomanssky.com/) have heavily relied on the art to produce the entire visible and interactible world for the player to explore.
 
