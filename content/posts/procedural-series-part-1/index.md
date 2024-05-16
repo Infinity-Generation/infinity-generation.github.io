@@ -20,7 +20,7 @@ Procedural generation (pc-gen or proc-gen for short) is the science, art, and te
 
 Procedural generation typically relies on deterministic [psuedorandom number generation](https://en.wikipedia.org/wiki/Pseudorandom_number_generator) (PRNG) to create reliable number sequences that can be used by downstream components to produce the exact same data for a given input. This ensures that if the user wants to generate the exact same data, all they need to do is use the exact same inputs. The trick is that the algorithms used in proc-gen tend to have high entropy, or "variability to the input", in their results; enabling a single number to drastically change the resulting output.
 
-### Where is it used
+### Where is it used?
 
 {{< gallery >}}
   <img src="gallery/Worldgen_small_steam.png" class="grid-w33" />
@@ -35,7 +35,7 @@ Procedural generation's most public claim to fame mostly comes from the video ga
 
 However, procedural generation plays important roles in everyday life that typically goes unnotice by most individuals and sometimes even the implementors of the proc-gen systems themselves!
 
-A list of less-known, but still widely used use-cases:
+An incomplete list of less-known, but still widely used use-cases:
 
 - **[Weather Forecasting](https://en.wikipedia.org/wiki/Weather_forecasting)**: Numerical weather prediction models like the Global Forecast System (GFS) developed by the National Centers for Environmental Prediction (NCEP) and the European Centre for Medium-Range Weather Forecasts (ECMWF) Integrated Forecast System (IFS) use procedural generation techniques to simulate atmospheric conditions and forecast weather.
 - **[Computer-Aided Design (CAD)](https://en.wikipedia.org/wiki/Computer-aided_design)**: Popular CAD software like Autodesk AutoCAD, SolidWorks, and CATIA heavily utilize procedural modeling techniques for creating and modifying 3D models.[^2]
@@ -52,11 +52,34 @@ A list of less-known, but still widely used use-cases:
 
 ## Humble Beginnings
 
-TODO: History
+Procedural generation has a briefer history than most computing, with prominent uses seen in video games as far back as the late 1970's, where it was seen used in games like _Beneath Apple Manor_, _Rogue_, and _Maze Craze_.
+
+However even before that, mathematicians such as Robert Brown (1773-1858), Norbert Wiener (1894-1964), Jean Perrin (1870–1942), Benoit Mandelbrot (1924–2010), and many others were hard at work observing fundamental stochastic processes and transforming them into algorithms.
+
+They laid down the foundations that would be later used to create the stochastic algorithms we use today in almost all procedural generation.[^19]
+
+- Robert Brown discovered the basis of Brownian Motion
+- Jean Perrin in collaboration with Godfrey Hardy were the first to try to transform Brownian Motion into an algorithm
+- Wiener expanded on Brownian Motion to add time as a parameter, in what is known as "Wiener process"
+- Mandelbrot developed a "self-avoiding random walk" algorithm based on Wierner process.[^20]
+
+![An image of the mandelbrot fractal](mandelbrot.jpg "A mandelbrot fractal")
+
+[Fractals](https://en.wikipedia.org/wiki/Fractal) are another way of generating infinitely recursive repeating patterns. Their history is even longer than that of the infinitely repeating algorithms above. Fractals have been seen in architecture, pottery design, and drawings since early on in human history. It wouldn't see introduction into mathematics until the 17th century by Gottfried Leibniz, who pondered the mysteries of recursive self-similarity.
+
+In the late 1800's, Karl Weierstrass and Georg Cantor contributed by discovering functions that could produce numbers on a line that would later be considered to be some of the first fractal sets (see [Cantor sets](https://en.wikipedia.org/wiki/Cantor_set)). Shortly after, Felix Klein and Henri Poincaré soon after discovered "self-inverse" fractals.
+
+At the turn of the next century, in 1904, the famous [Koch snowflake](https://en.wikipedia.org/wiki/Koch_snowflake) was described by Helge von Koch. It is still used in many introductory texts and computer science classes to teach students how recursive algorithms can be used to create fractal patterns
+
+![An image depicting the progressive fractal iterations of the Koch snowflake](KochSnowflake.jpg "Four iterations of the Koch snowflake")
+
+Nearly a century later in 1975, Mandelbrot became the first to visualize the [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set) originally drawn by Robert Brooks. This was the earliest known usage of computing technology to produce fractal images.
+
+In 1980, Loren Carpenter introduced software for generating and rendering fractally generated landscapes,[^21] and from here on we see more and more complex systems and techniques built on top of these fundamental building blocks. Today, we stand on the shoulders of these giants.
 
 ## The Many Techniques of Procedural Generation
 
-TODO: Techniques
+TODO
 
 ## A Brief Note on Noise
 
@@ -84,3 +107,6 @@ TODO: Next
 [^16]: [Example: "ProcSy: Procedural Synthetic Dataset Generation Towards Influence Factor Studies Of Semantic Segmentation Networks" by Khan et al. (2019)](http://openaccess.thecvf.com/content_CVPRW_2019/papers/Vision%20for%20All%20Seasons%20Bad%20Weather%20and%20Nighttime/Khan_ProcSy_Procedural_Synthetic_Dataset_Generation_Towards_Influence_Factor_Studies_Of_CVPRW_2019_paper.pdf)
 [^17]: [Example: "Procedural Generation of Synthetic Forest Environments to Train Machine Learning Algorithms" by Nunes, Oliveira (2021)](https://openreview.net/pdf?id=rpzgjNCe4G9)
 [^18]: [Example: "Synthetic Data Generation for Steel Defect Detection and Classification Using Deep Learning" by Boikov et al. (2021)](https://www.mdpi.com/2073-8994/13/7/1176)
+[^19]: [A Very Short History of Dynamicand Procedural Content Generation by Michael Blatz and Oliver Korn (2017)](https://www.researchgate.net/publication/315863952_A_Very_Short_History_of_Dynamic_and_Procedural_Content_Generation)
+[^20]: [Wikipedia: Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set)
+[^21]: [Wikipedia: Fractal](https://en.wikipedia.org/wiki/Fractal)
