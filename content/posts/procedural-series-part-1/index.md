@@ -16,7 +16,7 @@ In this series, we explore everything about procedural generation. We’ll explo
 
 ## What is Procedural Generation?
 
-Procedural generation (pc-gen or proc-gen for short) is the science, art, and technique of using _procedures_ (otherwise known as _algorithms_) to create data, typically through a combination of manually created content, computer-generated randomness, models and algorithms.[^1]
+Procedural generation (pcg, pc-gen or proc-gen for short) is the science, art, and technique of using _procedures_ (otherwise known as _algorithms_) to create data, typically through a combination of manually created content, computer-generated randomness, models and algorithms.[^1]
 
 Procedural generation typically relies on deterministic [psuedorandom number generation](https://en.wikipedia.org/wiki/Pseudorandom_number_generator) (PRNG) to create reliable number sequences that can be used by downstream components to produce the exact same data for a given input. This ensures that if the user wants to generate the exact same data, all they need to do is use the exact same inputs. The trick is that the algorithms used in proc-gen tend to have high entropy, or "variability to the input", in their results; enabling a single number to drastically change the resulting output.
 
@@ -33,7 +33,7 @@ Procedural generation typically relies on deterministic [psuedorandom number gen
 
 Procedural generation's most public claim to fame mostly comes from the video games industry, where games like [Dwarf Fortress](https://www.bay12games.com/dwarves/), [Minecraft](https://www.minecraft.net/en-us) or [No Man's Sky](https://www.nomanssky.com/) have heavily relied on the art to produce the entire visible and interactible world for the player to explore.
 
-However, procedural generation plays important roles in everyday life that typically goes unnotice by most individuals and sometimes even the implementors of the proc-gen systems themselves!
+However, procedural generation plays important roles in everyday life that typically goes unnotice by most individuals and sometimes even the implementors of the pcg systems themselves!
 
 An incomplete list of less-known, but still widely used use-cases:
 
@@ -71,7 +71,7 @@ In the late 1800's, Karl Weierstrass and Georg Cantor contributed by discovering
 
 At the turn of the next century, in 1904, the famous [Koch snowflake](https://en.wikipedia.org/wiki/Koch_snowflake) was described by Helge von Koch. It is still used in many introductory texts and computer science classes to teach students how recursive algorithms can be used to create fractal patterns
 
-![An image depicting the progressive fractal iterations of the Koch snowflake](KochSnowflake.jpg "Four iterations of the Koch snowflake")
+![An image depicting the progressive fractal iterations of the Koch snowflake](KochSnowflake.jpg "4 iterations of the Koch snowflake")
 
 Nearly a century later in 1975, Mandelbrot became the first to visualize the [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set) originally drawn by Robert Brooks. This was the earliest known usage of computing technology to produce fractal images.
 
@@ -79,7 +79,23 @@ In 1980, Loren Carpenter introduced software for generating and rendering fracta
 
 ## The Many Techniques of Procedural Generation
 
-TODO
+Modern pcg relies on several techniques and algorithms, often combining them to create larger systems or more useful output that the implementor has imagined
+
+Here is a list of a few of them:
+
+1. **[Noise:](https://en.wikipedia.org/wiki/Noise_(signal_processing))** Noise is a fundamental building block in procedural systems. Not only are there many ways of generating noise, but many kinds and categories of noise. It is quite common to layer, or combine layers of 2-dimensional noise and fractals to create more detailed or natural looking features and shapes.
+
+2. **[Fractals:](https://en.wikipedia.org/wiki/Fractal)** Fractal algorithms, such as the Mandelbrot set and Julia sets, help create self-similar features and structural patterns at different scales. They are very commonly used in procedural terrain and world generation.
+
+3. **[L-Systems:](https://en.wikipedia.org/wiki/L-system)** L-Systems, or Lindenmayer Systems, are parallel writing systems that use a set of rules to generate complex fractal-like structures. The are typically used to create foliage and organic structures.
+
+4. **[Cellular Automata:](https://en.wikipedia.org/wiki/Cellular_automaton)** These are mathematical models that consist of a grid of cells, where the state of each cell evolves based on a set of rules and the states of its neighboring cells. They are commonly used for generating cave systems, terrain, and other structures with emergent behavior.
+
+5. **[Wave Function Collapse:](https://en.wikipedia.org/wiki/Model_synthesis)** This is a relatively new technique that uses constraints and a wave function to generate coherent structures, such as dungeons, cities, or other complex environments, based on a set of input rules and sample data.
+
+6. **[Machine Learning and AI:](https://en.wikipedia.org/wiki/Machine_learning)** Statistical models can be trained on existing data to generate new content that mimics the characteristics of the training data, such as text, images, sound, video, models, decisions, and a great variety of other useful data.
+
+Note that there are many, _many_ more techniques - such as evolutionary algorithms, grammar-based decision trees, parametric rendering, branching and cycling trees, etc. There are even more ways of combining these, and even more ideas about how systems can be built around them to produce incredible results. The possibilities are limitless.
 
 ## A Brief Note on Noise
 
