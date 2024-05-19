@@ -75,7 +75,14 @@ They laid down the foundations that would be later used to create the stochastic
 - Wiener expanded on Brownian Motion to add time as a parameter, in what is known as "Wiener process".
 - Mandelbrot developed a "self-avoiding random walk" algorithm based on Wierner process.[^20]
 
-![An image of the mandelbrot fractal](mandelbrot.jpg "A mandelbrot fractal")
+{{< figure
+    src="mandelbrot.jpg"
+    alt="An image of the mandelbrot fractal"
+    caption="An image of the mandelbrot fractal."
+    width=400
+    height=400
+    default=true
+>}}
 
 [Fractals](https://en.wikipedia.org/wiki/Fractal) are another way of generating infinitely recursive repeating patterns. Their history is even longer than that of the infinitely repeating algorithms above. Fractals have been seen in architecture, pottery design, and drawings since early on in human history. It wouldn't see introduction into mathematics until the 17th century by Gottfried Leibniz, who pondered the mysteries of recursive self-similarity.
 
