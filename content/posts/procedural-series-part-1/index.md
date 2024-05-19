@@ -23,12 +23,24 @@ Modern pcg typically relies on deterministic [psuedorandom number generation](ht
 ### Where is it used?
 
 {{< gallery >}}
-  <img src="gallery/Worldgen_small_steam.png" class="grid-w33" />
-  <img src="gallery/Overworld.webp" class="grid-w33" />
-  <img src="gallery/no-mans-skys.webp" class="grid-w33" />
-  <figcaption class="grid-w33">Image 3: Gameplay of No Man's Sky. From <a href="https://assetsio.gnwcdn.com/no-mans-skys-free-next-generation-update-brings-impactful-graphical-upgrade-to-pc-ps5-and-xbox-series-x-s-1603833281557.jpg?width=1920&height=1920&fit=bounds&quality=80&format=jpg&auto=webp">Eurogamer</a>.</figcaption>
-  <figcaption class="grid-w33">Image 1: The small map of Dwarf Fortress. From <a href="https://dwarffortresswiki.org/index.php/File:Worldgen_small_steam.png">Dwarf Fortress Wiki</a>.</figcaption>
-  <figcaption class="grid-w33">Image 2: A forest biome in Minecraft. From <a href="https://minecraft.fandom.com/wiki/File:Overworld.jpg">Minecraft Wiki</a>.</figcaption>
+  {{< figure
+    src="gallery/Worldgen_small_steam.png"
+    alt="The small map of Dwarf Fortress"
+    caption="The small map of Dwarf Fortress. From [Dwarf Fortress Wiki](https://dwarffortresswiki.org/index.php/File:Worldgen_small_steam.png)"
+    class="grid-w33"
+  >}}
+  {{< figure
+    src="gallery/Overworld.webp"
+    alt="A forest biome in Minecraft"
+    caption="A forest biome in Minecraft. From [Minecraft Fandom](https://minecraft.fandom.com/wiki/File:Overworld.jpg)"
+    class="grid-w33"
+  >}}
+  {{< figure
+    src="gallery/nms.jpg"
+    alt="Gameplay of No Man's Sky"
+    caption="Gameplay of [No Man's Sky](https://www.nomanssky.com/next-generation-update/#:~:text=Update%203.10%20brings%20a%20graphically,free%20for%20all%20existing%20players.)"
+    class="grid-w33"
+  >}}
 {{< /gallery >}}
 
 Procedural generation's most public claim to fame mostly comes from the video games industry, where games like [Dwarf Fortress](https://www.bay12games.com/dwarves/), [Minecraft](https://www.minecraft.net/en-us) or [No Man's Sky](https://www.nomanssky.com/) have heavily relied on the art to produce the entire visible and interactible world for the player to explore.
@@ -90,8 +102,6 @@ Here is a (vastly) incomplete list:
 {{< figure
     src="coherent_noise.png"
     alt="5 octaves of Perlin noise"
-    width=600
-    height=600
     caption="5 octaves of Perlin noise. By ricksidwell on [fractalformulas](https://fractalformulas.wordpress.com/2019/08/19/coherent-noise/)"
 >}}
 
@@ -153,7 +163,7 @@ There are even more ways of combining these, and even more ideas about how syste
 
 ## What's Next
 
-Next, we'll explore the basics of modern pcg by looking at how combining pseudo-random number generators, noise generation, and other techniques have been used to create video games like Minecraft, Rogue or No-Man's Sky.
+Next, we'll explore the basics of modern pcg by taking a deeper dive into pseudo-random number generators, noise generation, L-Systems, and space partitioning.
 
 [^1]: <https://en.wikipedia.org/wiki/Procedural_generation>
 [^2]: [Example: "Procedural modeling of Architecture" by Wonka et al. (2003)](https://dl.acm.org/doi/abs/10.1145/1185657.1185713)
