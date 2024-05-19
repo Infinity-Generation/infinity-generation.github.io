@@ -92,7 +92,7 @@ Here is a (vastly) incomplete list:
     alt="5 octaves of Perlin noise"
     width=600
     height=600
-    caption="5 octaves of Perlin noise (from https://fractalformulas.wordpress.com/2019/08/19/coherent-noise/)"
+    caption="5 octaves of Perlin noise. By ricksidwell on [fractalformulas](https://fractalformulas.wordpress.com/2019/08/19/coherent-noise/)"
 >}}
 
 2. **[Fractals:](https://en.wikipedia.org/wiki/Fractal)** Fractal algorithms, such as the Mandelbrot set and Julia sets, help create self-similar features and structural patterns at different scales. They are very commonly used in procedural terrain and world generation.
